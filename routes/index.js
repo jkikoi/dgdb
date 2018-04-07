@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const common = require('../common');
+router.use('/user', require('./user'));
 
 router.get('/', function(req, res, next) {
   res.render('index', {

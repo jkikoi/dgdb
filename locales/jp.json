@@ -1,4 +1,14 @@
 {
   "home:link_to": "ホーム",
-  "home:title": "ホーム"
+  "home:title": "ホーム",
+
+  "user/login:link_to": "ログイン",
+
+  "user/register:link_to": "登録する",
+  "user/register:title": "登録する",
+  "user/register:description": "DGDBの個人アカウントを登録する",
+  "user/register:label-username": "ユーザー名",
+  "user/register:label-password": "パスワード",
+  "user/register:label-password_confirm": "パスワードを確認する",
+  "user/register:button-register": "登録する"
 }

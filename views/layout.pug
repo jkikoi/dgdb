@@ -21,5 +21,9 @@ html
     div.sidebar
       p
         | <a href='/'>!{__('home:link_to')}</a>
+        | <br>
+        | <a class='clr-2' href='/user/login'>!{__('user/login:link_to')}</a>
+        | <a class='clr-2' href='/user/register'>!{__('user/register:link_to')}</a>
 
-    block content
+    div.main
+      block content

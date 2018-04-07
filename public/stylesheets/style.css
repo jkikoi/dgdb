@@ -2,13 +2,14 @@
 body {
   margin: 0;
   background: #000;
-  font: 9pt Verdana;
+  font: 8pt Verdana;
+  color: #fff;
 }
 div.background {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: -3;
   background: url("/images/background.png") repeat;
   filter: blur(3px);
   animation: 60s anim-div-background linear infinite;
@@ -18,7 +19,7 @@ div.header {
 }
 div.lang-select {
   position: absolute;
-  top: -8px;
+  top: 5px;
   right: 5px;
 }
 div.sidebar {
@@ -28,9 +29,10 @@ div.sidebar {
   top: 0;
   z-index: -1;
   background: #14191e;
-  border-right: 1px #1d252c solid;
+  border-right: 1px rgba(38,48,58,0.5) solid;
 }
 div.sidebar p {
+  padding: 0;
   margin-top: 100px;
   font-size: 10pt;
 }
@@ -42,6 +44,22 @@ div.sidebar a {
 }
 div.sidebar a:hover {
   background-color: rgba(0,0,0,0.3);
+}
+div.main {
+  position: absolute;
+  top: 100px;
+  left: 260px;
+}
+div.section {
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(38,48,58,0.5);
+  box-shadow: 5px 5px 0 rgba(0,0,0,0.15);
+}
+div.error {
+  background: rgba(255,64,64,0.1);
+  border-left: 1px rgba(255,64,64,0.5) solid;
 }
 h1.logo {
   width: 220px;
@@ -61,9 +79,46 @@ h1.logo:hover {
   background-size: 100% 100%;
   cursor: pointer;
 }
+p,
+pre {
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: #80c0ff;
+}
+a.clr-2 {
+  color: #ffc080;
+}
+label {
+  font-size: 7pt;
+  color: rgba(255,255,255,0.5);
+}
+input {
+  background: rgba(0,0,0,0.2);
+  border: none;
+  font: 8pt Verdana;
+  color: #fff;
+}
+input:hover {
+  background: rgba(0,0,0,0.3);
+}
+input[type='text'],
+input[type='password'] {
+  width: 500px;
+  padding: 3px;
+  margin-top: 3px;
+}
+input[type='submit'] {
+  min-width: 100px;
+  padding: 7px;
+  border: 1px #26303a solid;
+}
+input[type='submit']:hover {
+  background: rgba(128,255,192,0.1);
+  border: 1px rgba(128,255,192,0.5) solid;
+  box-shadow: 0 0 10px rgba(128,255,192,0.5);
+  cursor: pointer;
 }
 @-moz-keyframes anim-div-background {
   0% {

@@ -1,4 +1,14 @@
 {
   "home:link_to": "Home",
-  "home:title": "Home"
+  "home:title": "Home",
+
+  "user/login:link_to": "Login",
+
+  "user/register:link_to": "Register",
+  "user/register:title": "Register",
+  "user/register:description": "Register a personal account for DGDB",
+  "user/register:label-username": "Username",
+  "user/register:label-password": "Password",
+  "user/register:label-password_confirm": "Confirm password",
+  "user/register:button-register": "Register"
 }
