@@ -9,8 +9,10 @@ html
     div.background
 
     div.header
-      h1.logo DGDB
+      h1.logo(onclick='location.href=\'/\'') DGDB
 
     div.sidebar
+      p
+        | <a href='/'>Home</a>
 
     block content
