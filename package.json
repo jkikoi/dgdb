@@ -15,5 +15,8 @@
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5",
     "stylus": "0.54.5"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
   }
 }
