@@ -16,6 +16,11 @@ div.background {
 div.header {
   background: rgba(0,0,0,0.2);
 }
+div.lang-select {
+  position: absolute;
+  top: -8px;
+  right: 5px;
+}
 div.sidebar {
   width: 260px;
   min-height: 100vh;

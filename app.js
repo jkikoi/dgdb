@@ -23,6 +23,24 @@ app.use(cookieParser());
 app.use(stylus.middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// i18n localization support
+const i18n = require('i18n');
+
+i18n.configure({
+  locals: ['en', 'jp'],
+  directory: __dirname + '/locales',
+  cookie: 'lang',
+  queryParameter: 'lang' });
+
+app.use(i18n.init);
+app.use(function(req, res, next) {
+  if (req.query.lang) {
+    res.cookie('lang', req.query.lang, { maxAge: 2147483647, httpOnly: true });
+  }
+
+  next();
+});
+
 app.use('/', index);
 
 // catch 404 and forward to error handler

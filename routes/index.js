@@ -4,7 +4,8 @@ const router = express.Router();
 const common = require('../common');
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home - ' + common.website_name });
+  res.render('index', {
+    title: req.__('home:title') + ' - ' + common.website_name });
 });
 
 module.exports = router;

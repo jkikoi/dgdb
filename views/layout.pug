@@ -3,6 +3,8 @@ doctype html
 html
   head
     title= title
+
+    link(rel='stylesheet' href='/stylesheets/flags/flags.min.css')
     link(rel='stylesheet' href='/stylesheets/style.css')
 
   body
@@ -11,8 +13,13 @@ html
     div.header
       h1.logo(onclick='location.href=\'/\'') DGDB
 
+    div.lang-select
+      p
+        | <a href='?lang=en'><img class='flag flag-gb' src='/images/flags/blank.gif'></a>
+        | <a href='?lang=jp'><img class='flag flag-jp' src='/images/flags/blank.gif'></a>
+
     div.sidebar
       p
-        | <a href='/'>Home</a>
+        | <a href='/'>!{__('home:link_to')}</a>
 
     block content
