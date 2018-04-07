@@ -16,8 +16,8 @@ div.header {
 }
 h1.logo {
   width: 220px;
+  padding-bottom: 2px;
   margin: 0;
-  margin-bottom: 2px;
   margin-left: 15px;
   background: linear-gradient(90deg, #ffc080, #ff80c0, #c080ff, #80c0ff, #80ffc0);
   background-size: 400% 100%;
