@@ -10,6 +10,7 @@ div.background {
   z-index: -1;
   background: url("/images/background.png") repeat;
   filter: blur(3px);
+  animation: 60s anim-div-background linear infinite;
 }
 div.header {
   background: rgba(0,0,0,0.2);
@@ -35,6 +36,38 @@ h1.logo {
   font: 50pt Orbitron;
   color: transparent;
   animation: 30s anim-h1-logo ease-in-out infinite alternate;
+}
+@-moz-keyframes anim-div-background {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+@-webkit-keyframes anim-div-background {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+@-o-keyframes anim-div-background {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+@keyframes anim-div-background {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
 }
 @-moz-keyframes anim-h1-logo {
   0% {

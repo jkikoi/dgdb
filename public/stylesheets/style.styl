@@ -28,6 +28,14 @@ div.background
   background url('/images/background.png') repeat
   filter blur(3px)
 
+  animation 60s anim-div-background linear infinite
+
+@keyframes anim-div-background
+  0%
+    background-position-x 100%
+  100%
+    background-position-x 0
+
 div.header
   background alpha(black, 20%)
 
