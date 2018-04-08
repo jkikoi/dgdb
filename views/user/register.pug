@@ -11,17 +11,17 @@ block content
   form(action='/user/register' method='post')
     div.section
       label(for='username') !{__('user/register:label-username')}<br>
-      input#username(type='text' name='username' maxlength='20' autocomplete='off')
+      input#username(type='text' name='username' value=form.username maxlength='20' autocomplete='off')
       
       <br>
       <br>
       label(for='password') !{__('user/register:label-password')}<br>
-      input#password(type='password' name='password' maxlength='100' autocomplete='off')
+      input#password(type='password' name='password' value=form.password maxlength='100' autocomplete='off')
 
       <br>
       <br>
       label(for='password_confirm') !{__('user/register:label-password_confirm')}<br>
-      input#password_confirm(type='password' name='password_confirm' maxlength='100' autocomplete='off')
+      input#password_confirm(type='password' name='password_confirm' value=form.password_confirm maxlength='100' autocomplete='off')
 
     div.section
       input(type='submit' value=__('user/register:button-register'))

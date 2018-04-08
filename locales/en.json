@@ -1,4 +1,6 @@
 {
+  "db-generic-error": "Something went wrong. Please try again, or contact the site admin if the issue persists",
+
   "home:link_to": "Home",
   "home:title": "Home",
 
@@ -13,5 +15,8 @@
   "user/register:button-register": "Register",
   "user/register:error-missing-fields": "All fields are required",
   "user/register:error-username-length": "Usernames must be between 3 and 20 characters long (inclusive)",
-  "user/register:error-password-length": "Passwords must be between 10 and 100 characters long (inclusive)"
+  "user/register:error-username-invalid-chars": "Usernames may only use: a-z, A-Z, 0-9, and _",
+  "user/register:error-username-taken": "Username is taken",
+  "user/register:error-password-length": "Passwords must be between 10 and 100 characters long (inclusive)",
+  "user/register:error-password-confirm": "Passwords don't match"
 }

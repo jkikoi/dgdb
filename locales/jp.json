@@ -1,4 +1,6 @@
 {
+  "db-generic-error": "何かが間違っていた。 問題が解決しない場合は、もう一度やり直すか、サイト管理者に連絡してください",
+
   "home:link_to": "ホーム",
   "home:title": "ホーム",
 
@@ -13,5 +15,8 @@
   "user/register:button-register": "登録する",
   "user/register:error-missing-fields": "全て必須項目です",
   "user/register:error-username-length": "ユーザー名は、3文字以上20文字以下でなければなりません",
-  "user/register:error-password-length": "パスワードは、10文字以上100文字以下でなければなりません"
+  "user/register:error-username-invalid-chars": "ユーザー名は：a-z、A-Z、0-9、_",
+  "user/register:error-username-taken": "ユーザー名が取得されました",
+  "user/register:error-password-length": "パスワードは、10文字以上100文字以下でなければなりません",
+  "user/register:error-password-confirm": "パスワードが一致していません"
 }
