@@ -4,14 +4,24 @@ html
   head
     title= title
 
-    link(rel='stylesheet' href='/stylesheets/flags/flags.min.css')
-    link(rel='stylesheet' href='/stylesheets/style.css')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/flags/flags.min.css')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/style.css')
+
+    script(type='text/javascript' src='/javascripts/jquery-3.3.1.min.js')
+    script(type='text/javascript' src='/javascripts/jquery.cookie-1.4.1.min.js')
+
+  script.
+    $(document).ready(function() {   
+      if ($.cookie('lang') == 'jp') {
+        $('head').append("<link rel='stylesheet' type='text/css' href='/stylesheets/jp.css'>");
+      }
+    }); 
 
   body
     div.background
 
     div.header
-      h1.logo(onclick='location.href=\'/\'') DGDB
+      h1.logo(onclick="location.href='/'") DGDB
 
     div.lang-select
       p

@@ -10,5 +10,8 @@
   "user/register:label-username": "ユーザー名",
   "user/register:label-password": "パスワード",
   "user/register:label-password_confirm": "パスワードを確認する",
-  "user/register:button-register": "登録する"
+  "user/register:button-register": "登録する",
+  "user/register:error-missing-fields": "全て必須項目です",
+  "user/register:error-username-length": "ユーザー名は、3文字以上20文字以下でなければなりません",
+  "user/register:error-password-length": "パスワードは、10文字以上100文字以下でなければなりません"
 }

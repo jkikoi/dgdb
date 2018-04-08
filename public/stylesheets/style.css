@@ -61,6 +61,10 @@ div.error {
   background: rgba(255,64,64,0.1);
   border-left: 1px rgba(255,64,64,0.5) solid;
 }
+div.error p,
+div.error pre {
+  color: #ffa0a0;
+}
 h1.logo {
   width: 220px;
   padding-bottom: 2px;

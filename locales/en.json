@@ -10,5 +10,8 @@
   "user/register:label-username": "Username",
   "user/register:label-password": "Password",
   "user/register:label-password_confirm": "Confirm password",
-  "user/register:button-register": "Register"
+  "user/register:button-register": "Register",
+  "user/register:error-missing-fields": "All fields are required",
+  "user/register:error-username-length": "Usernames must be between 3 and 20 characters long (inclusive)",
+  "user/register:error-password-length": "Passwords must be between 10 and 100 characters long (inclusive)"
 }

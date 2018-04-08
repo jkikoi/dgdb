@@ -35,7 +35,8 @@ i18n.configure({
 app.use(i18n.init);
 app.use(function(req, res, next) {
   if (req.query.lang) {
-    res.cookie('lang', req.query.lang, { maxAge: 2147483647, httpOnly: true });
+    // httpOnly needs to be false so that the cookie can be accessed by jQuery
+    res.cookie('lang', req.query.lang, { maxAge: 2147483647, httpOnly: false });
   }
 
   next();
