@@ -1,0 +1,22 @@
+{
+  "db-generic-error": "Quelque chose s'est mal passé. Veuillez réessayer, ou contactez l'administrateur du site si le problème persiste",
+
+  "home:link_to": "Accueil",
+  "home:title": "Accueil",
+
+  "user/login:link_to": "Se connecter",
+
+  "user/register:link_to": "S'inscrire",
+  "user/register:title": "S'inscrire",
+  "user/register:description": "Enregistrez un compte personnel pour DGDB",
+  "user/register:label-username": "Nom d'utilisateur",
+  "user/register:label-password": "Mot de passe",
+  "user/register:label-password_confirm": "Confirmez le mot de passe",
+  "user/register:button-register": "S'inscrire",
+  "user/register:error-missing-fields": "Tous les champs sont requis",
+  "user/register:error-username-length": "Les noms d'utilisateur doivent comporter entre 3 et 20 caractères (inclus)",
+  "user/register:error-username-invalid-chars": "Les noms d'utilisateur ne peuvent utiliser que: a-z, A-Z, 0-9, et _",
+  "user/register:error-username-taken": "Le nom d'utilisateur est pris",
+  "user/register:error-password-length": "Les mots de passe doivent comporter entre 10 et 100 caractères (inclus)",
+  "user/register:error-password-confirm": "Les mots de passe ne correspondent pas"
+}
