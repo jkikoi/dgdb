@@ -79,6 +79,14 @@ div.section {
   background: rgba(38,48,58,0.5);
   box-shadow: 5px 5px 0 rgba(0,0,0,0.15);
 }
+div.success {
+  background: rgba(64,255,64,0.1);
+  border-top: 1px rgba(64,255,64,0.5) solid;
+}
+div.success p,
+div.success pre {
+  color: #a0ffa0;
+}
 div.error {
   background: rgba(255,64,64,0.1);
   border-top: 1px rgba(255,64,64,0.5) solid;

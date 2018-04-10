@@ -13,6 +13,7 @@
   "user/login:label-username": "Nom d'utilisateur",
   "user/login:label-password": "Mot de passe",
   "user/login:button-log-in": "Se connecter",
+  "user/login:success-created": "Compte créé avec succès. Vous pouvez maintenant vous connecter",
   "user/login:error-missing-fields": "Tous les champs sont requis",
   "user/login:error-username-length": "Les noms d'utilisateur ont entre 3 et 20 caractères (inclus)",
   "user/login:error-password-length": "Les mots de passe ont entre 10 et 100 caractères (inclus)",

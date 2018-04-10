@@ -122,7 +122,10 @@ router.post('/register', async function(req, res, next) {
           form: form });
       }
       else {
-        res.redirect('/user/login');
+        res.render('user/login', {
+          title: req.__('user/login:title') + ' - ' + common.website_name,
+          success: req.__('user/login:success-created'),
+          form: form });
       }
     });
   }

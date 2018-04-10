@@ -13,6 +13,7 @@ clr-rainbow-gradient = linear-gradient(90deg,
   clr-rainbow-5
 )
 
+clr-success = rgb(64,255,64)
 clr-error = rgb(255,64,64)
 
 clr-bg-sidebar = rgb(20,25,30)
@@ -115,6 +116,13 @@ div.section
 
   background alpha(clr-bg-main, 50%)
   box-shadow 5px 5px 0 alpha(black, 15%)
+
+div.success
+  background alpha(clr-success, 10%)
+  border-top 1px alpha(clr-success, 50%) solid
+
+div.success p, div.success pre
+  color lighten(clr-success, 50%)
 
 div.error
   background alpha(clr-error, 10%)
