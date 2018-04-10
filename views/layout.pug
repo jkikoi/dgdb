@@ -30,11 +30,17 @@ html
         | <a href='?lang=jp'><img class='flag flag-jp' src='/images/flags/blank.gif'></a>
 
     div.sidebar
+    div.navigation
       p
         | <a href='/'>!{__('home:link_to')}</a>
         | <br>
-        | <a class='clr-2' href='/user/login'>!{__('user/login:link_to')}</a>
-        | <a class='clr-2' href='/user/register'>!{__('user/register:link_to')}</a>
+        if user
+          | <span class='subdued label'>!{__('layout:logged-in-as')} !{user.name}</span>
+          | <a class='small clr-2' href='/user/!{user.id}'>!{__('layout:my-profile')}</a>
+          | <a class='small subdued' href='/user/logout'>!{__('user/logout:link_to')}</a>
+        else
+          | <a class='small clr-2' href='/user/login'>!{__('user/login:link_to')}</a>
+          | <a class='small clr-2' href='/user/register'>!{__('user/register:link_to')}</a>
 
     div.main
       block content

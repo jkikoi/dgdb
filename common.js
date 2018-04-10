@@ -28,6 +28,29 @@ catch (e) {
   console.error('Failed to load config file! DB queries will fail');
 }
 
+// ------------------------------------------------------------------ Sessions
+const sessions = require('client-sessions');
+const keygen = require('generate-key');
+
+const one_week = 1000 * 60 * 60 * 24 * 7;
+
+const client_sessions = sessions({
+  cookieName: 'session',
+  secret: keygen.generateKey(60),
+  duration: one_week,
+  activeDuration: one_week,
+  cookie: { httpOnly: true }});
+
+// Middleware that forwards the logged in user's info to pages
+const client_sessions_mw = function(req, res, next) {
+  if (req.session && req.session.user) {
+    res.locals.user = req.session.user;
+  }
+
+  next();
+};
+
 module.exports = {
   website_name, get_timestamp,
-  pg_pool };
+  pg_pool,
+  client_sessions, client_sessions_mw };

@@ -10,6 +10,65 @@ router.get('/login', function(req, res, next) {
     form: {} });
 });
 
+router.post('/login', function(req, res, next) {
+  const form = req.body;
+  let error;
+
+  if (!form.username || !form.password) {
+    error = 'user/login:error-missing-fields';
+  }
+  else if (form.username.length < 3 || form.username.length > 20) {
+    error = 'user/login:error-username-length';
+  }
+  else if (form.password.length < 10 || form.password.length > 100) {
+    error = 'user/login:error-password-length';
+  }
+
+  if (error) {
+    res.render('user/login', {
+      title: req.__('user/login:title') + ' - ' + common.website_name,
+      error: req.__(error),
+      form: form });
+  }
+  else {
+    const query = `
+      SELECT id, username, pw_hash
+      FROM users
+      WHERE lower(username) = lower($1);`;
+
+    const vars = [ form.username ];
+
+    common.pg_pool.query(query, vars, (err, res2) => {
+      if (err) {
+        console.error(err);
+        error = 'db-generic-error';
+      }
+      else if (res2.rowCount == 0) {
+        error = 'user/login:error-username-non-existent';
+      }
+      else {
+        if (bcrypt.compareSync(form.password, res2.rows[0].pw_hash)) {
+          req.session.user = {
+            id: res2.rows[0].id,
+            name: res2.rows[0].username };
+
+          res.redirect('/');
+        }
+        else {
+          error = 'user/login:error-password-incorrect';
+        }
+      }
+
+      if (error) {
+        res.render('user/login', {
+          title: req.__('user/login:title') + ' - ' + common.website_name,
+          error: req.__(error),
+          form: form });
+      }
+    });
+  }
+});
+
 router.get('/register', function(req, res, next) {
   res.render('user/register', {
     title: req.__('user/register:title') + ' - ' + common.website_name,

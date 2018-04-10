@@ -1,6 +1,9 @@
 {
   "db-generic-error": "Something went wrong. Please try again, or contact the site admin if the issue persists",
 
+  "layout:logged-in-as": "Logged in as",
+  "layout:my-profile": "My profile",
+
   "home:link_to": "Home",
   "home:title": "Home",
 
@@ -10,6 +13,11 @@
   "user/login:label-username": "Username",
   "user/login:label-password": "Password",
   "user/login:button-log-in": "Log in",
+  "user/login:error-missing-fields": "All fields are required",
+  "user/login:error-username-length": "Usernames are between 3 and 20 characters long (inclusive)",
+  "user/login:error-password-length": "Passwords are between 10 and 100 characters long (inclusive)",
+  "user/login:error-username-non-existent": "Username does not exist",
+  "user/login:error-password-incorrect": "Invalid credentials",
 
   "user/register:link_to": "Register",
   "user/register:title": "Register",
@@ -23,5 +31,7 @@
   "user/register:error-username-invalid-chars": "Usernames may only use: a-z, A-Z, 0-9, and _",
   "user/register:error-username-taken": "Username is taken",
   "user/register:error-password-length": "Passwords must be between 10 and 100 characters long (inclusive)",
-  "user/register:error-password-confirm": "Passwords don't match"
+  "user/register:error-password-confirm": "Passwords don't match",
+
+  "user/logout:link_to": "Log out"
 }

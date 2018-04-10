@@ -1,6 +1,9 @@
 {
   "db-generic-error": "Quelque chose s'est mal passé. Veuillez réessayer, ou contactez l'administrateur du site si le problème persiste",
 
+  "layout:logged-in-as": "Connecté en tant que",
+  "layout:my-profile": "Mon profil",
+
   "home:link_to": "Accueil",
   "home:title": "Accueil",
 
@@ -10,6 +13,11 @@
   "user/login:label-username": "Nom d'utilisateur",
   "user/login:label-password": "Mot de passe",
   "user/login:button-log-in": "Se connecter",
+  "user/login:error-missing-fields": "Tous les champs sont requis",
+  "user/login:error-username-length": "Les noms d'utilisateur ont entre 3 et 20 caractères (inclus)",
+  "user/login:error-password-length": "Les mots de passe ont entre 10 et 100 caractères (inclus)",
+  "user/login:error-username-non-existent": "Le nom d'utilisateur n'existe pas",
+  "user/login:error-password-incorrect": "Les informations d'identification invalides",
 
   "user/register:link_to": "S'inscrire",
   "user/register:title": "S'inscrire",
@@ -23,5 +31,7 @@
   "user/register:error-username-invalid-chars": "Les noms d'utilisateur ne peuvent utiliser que: a-z, A-Z, 0-9, et _",
   "user/register:error-username-taken": "Le nom d'utilisateur est pris",
   "user/register:error-password-length": "Les mots de passe doivent comporter entre 10 et 100 caractères (inclus)",
-  "user/register:error-password-confirm": "Les mots de passe ne correspondent pas"
+  "user/register:error-password-confirm": "Les mots de passe ne correspondent pas",
+
+  "user/logout:link_to": "Déconnecter"
 }
