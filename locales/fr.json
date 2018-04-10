@@ -5,6 +5,11 @@
   "home:title": "Accueil",
 
   "user/login:link_to": "Se connecter",
+  "user/login:title": "Se connecter",
+  "user/login:description": "Vous n'avez pas de compte? S'inscrire <a href='/user/register'>ici</a>",
+  "user/login:label-username": "Nom d'utilisateur",
+  "user/login:label-password": "Mot de passe",
+  "user/login:button-log-in": "Se connecter",
 
   "user/register:link_to": "S'inscrire",
   "user/register:title": "S'inscrire",

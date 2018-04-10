@@ -5,6 +5,11 @@
   "home:title": "ホーム",
 
   "user/login:link_to": "ログイン",
+  "user/login:title": "ログイン",
+  "user/login:description": "アカウントを持っていない？ <a href='/user/register'>ここ</a>に登録する",
+  "user/login:label-username": "ユーザー名",
+  "user/login:label-password": "パスワード",
+  "user/login:button-log-in": "ログイン",
 
   "user/register:link_to": "登録する",
   "user/register:title": "登録する",

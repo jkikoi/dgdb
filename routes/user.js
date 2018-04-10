@@ -4,6 +4,12 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const common = require('../common');
 
+router.get('/login', function(req, res, next) {
+  res.render('user/login', {
+    title: req.__('user/login:title') + ' - ' + common.website_name,
+    form: {} });
+});
+
 router.get('/register', function(req, res, next) {
   res.render('user/register', {
     title: req.__('user/register:title') + ' - ' + common.website_name,

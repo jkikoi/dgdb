@@ -4,7 +4,12 @@
   "home:link_to": "Home",
   "home:title": "Home",
 
-  "user/login:link_to": "Login",
+  "user/login:link_to": "Log in",
+  "user/login:title": "Log in",
+  "user/login:description": "Don't have an account? Register <a href='/user/register'>here</a>",
+  "user/login:label-username": "Username",
+  "user/login:label-password": "Password",
+  "user/login:button-log-in": "Log in",
 
   "user/register:link_to": "Register",
   "user/register:title": "Register",
