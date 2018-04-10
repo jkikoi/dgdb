@@ -5,9 +5,14 @@ const bcrypt = require('bcrypt');
 const common = require('../common');
 
 router.get('/login', function(req, res, next) {
-  res.render('user/login', {
-    title: req.__('user/login:title') + ' - ' + common.website_name,
-    form: {} });
+  if (req.session.user) {
+    res.redirect('/');
+  }
+  else {
+    res.render('user/login', {
+      title: req.__('user/login:title') + ' - ' + common.website_name,
+      form: {} });
+  }
 });
 
 router.post('/login', function(req, res, next) {
@@ -70,9 +75,14 @@ router.post('/login', function(req, res, next) {
 });
 
 router.get('/register', function(req, res, next) {
-  res.render('user/register', {
-    title: req.__('user/register:title') + ' - ' + common.website_name,
-    form: {} });
+  if (req.session.user) {
+    res.redirect('/');
+  }
+  else {
+    res.render('user/register', {
+      title: req.__('user/register:title') + ' - ' + common.website_name,
+      form: {} });
+  }
 });
 
 router.post('/register', async function(req, res, next) {
@@ -180,5 +190,10 @@ function registerUser(user, callback) {
     }
   });
 }
+
+router.get('/logout', function(req, res, next) {
+  req.session.reset();
+  res.redirect('/');
+});
 
 module.exports = router;
