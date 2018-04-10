@@ -205,3 +205,29 @@ input[type='submit']:hover
   box-shadow 0 0 10px alpha(clr-form, 50%)
 
   cursor pointer
+
+@media (max-width: 767.98px)
+  div.header
+    padding-top 15px // Prevent page content from being squished up against the ceiling on mobile
+    background none
+
+  div.sidebar
+    display none
+
+  div.navigation
+    width 100%
+    position static
+    margin-top 0
+    margin-bottom 15px
+
+  div.main
+    position static
+
+  div.section
+    width auto
+
+  input[type='text'], input[type='password']
+    width 98%
+
+  img
+    image-rendering pixelated
