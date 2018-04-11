@@ -36,11 +36,15 @@ html
       p
         | <a href='/'>!{__('home:link_to')}</a>
         | <br>
+        | <span class='subdued label'>!{__('layout:games')}</span>
+        | <a class='small clr-3' href='/game/new'>!{__('game/new:link_to')}</a>
+        | <br>
         if user
           | <span class='subdued label'>!{__('layout:logged-in-as')} !{user.name}</span>
-          | <a class='small clr-2' href='/user/!{user.id}'>!{__('layout:my-profile')}</a>
+          | <a class='small clr-2' href='/user/!{user.id}'>!{__('user/profile:link_to')}</a>
           | <a class='small subdued' href='/user/logout'>!{__('user/logout:link_to')}</a>
         else
+          | <span class='subdued label'>!{__('layout:user-panel')}</span>
           | <a class='small clr-2' href='/user/login'>!{__('user/login:link_to')}</a>
           | <a class='small clr-2' href='/user/register'>!{__('user/register:link_to')}</a>
 

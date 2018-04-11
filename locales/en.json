@@ -1,11 +1,25 @@
 {
   "db-generic-error": "Something went wrong. Please try again, or contact the site admin if the issue persists",
 
+  "layout:games": "Games",
+  "layout:user-panel": "User Panel",
   "layout:logged-in-as": "Logged in as",
-  "layout:my-profile": "My profile",
 
   "home:link_to": "Home",
   "home:title": "Home",
+
+  "game/new:link_to": "Add a new entry",
+  "game/new:title": "New game",
+  "game/new:header-general": "General",
+  "game/new:general-desc": "At least one title is required",
+  "game/new:label-title-jp": "Title (Japanese)",
+  "game/new:label-title-romaji": "Title (Romaji)",
+  "game/new:label-title-english": "Title (English)",
+  "game/new:label-title-other": "Also known as (comma-separated)",
+  "game/new:header-links": "Links",
+  "game/new:label-homepage": "Game's homepage (official)",
+  "game/new:label-download": "Download page/link",
+  "game/new:button-submit": "Submit",
 
   "user/login:link_to": "Log in",
   "user/login:title": "Log in",
@@ -33,6 +47,8 @@
   "user/register:error-username-taken": "Username is taken",
   "user/register:error-password-length": "Passwords must be between 10 and 100 characters long (inclusive)",
   "user/register:error-password-confirm": "Passwords don't match",
+
+  "user/profile:link_to": "My profile",
 
   "user/logout:link_to": "Log out"
 }

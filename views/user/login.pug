@@ -17,10 +17,11 @@ block content
       label(for='username') !{__('user/login:label-username')}<br>
       input#username(type='text' name='username' value=form.username maxlength='20' autocomplete='off')
       
-      <br>
-      <br>
+      br
+      br
       label(for='password') !{__('user/login:label-password')}<br>
       input#password(type='password' name='password' value=form.password maxlength='100' autocomplete='off')
 
     div.section
-      input(type='submit' value=__('user/login:button-log-in'))
+      center
+        input(type='submit' value=__('user/login:button-log-in'))

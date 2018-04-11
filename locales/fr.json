@@ -1,11 +1,25 @@
 {
   "db-generic-error": "Quelque chose s'est mal passé. Veuillez réessayer, ou contactez l'administrateur du site si le problème persiste",
 
+  "layout:games": "Jeux",
+  "layout:user-panel": "Panneau d'utilisateur",
   "layout:logged-in-as": "Connecté en tant que",
-  "layout:my-profile": "Mon profil",
 
   "home:link_to": "Accueil",
   "home:title": "Accueil",
+
+  "game/new:link_to": "Ajouter une nouvelle entrée",
+  "game/new:title": "Nouveau jeu",
+  "game/new:header-general": "Général",
+  "game/new:general-desc": "Au moins un titre est requis",
+  "game/new:label-title-jp": "Titre (Japonais)",
+  "game/new:label-title-romaji": "Titre (Romaji)",
+  "game/new:label-title-english": "Titre (Anglais)",
+  "game/new:label-title-other": "Aussi connu sous le nom de (séparé par des virgules)",
+  "game/new:header-links": "Liens",
+  "game/new:label-homepage": "La page d'accueil du jeu (officiel)",
+  "game/new:label-download": "Télécharger la page/le lien",
+  "game/new:button-submit": "Soumettre",
 
   "user/login:link_to": "Se connecter",
   "user/login:title": "Se connecter",
@@ -33,6 +47,8 @@
   "user/register:error-username-taken": "Le nom d'utilisateur est pris",
   "user/register:error-password-length": "Les mots de passe doivent comporter entre 10 et 100 caractères (inclus)",
   "user/register:error-password-confirm": "Les mots de passe ne correspondent pas",
+
+  "user/profile:link_to": "Mon profil",
 
   "user/logout:link_to": "Déconnecter"
 }

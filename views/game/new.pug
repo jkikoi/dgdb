@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+  form(action='/game/new' method='post')
+    div.flex
+      div.column-left
+        h3.header !{__('game/new:header-general')}
+        div.section
+          p <span class='required'>*</span> !{__('game/new:general-desc')}
+
+          br
+          label(for='title_jp') !{__('game/new:label-title-jp')}<br>
+          input#title_jp(type='text' name='title_jp' value=form.title_jp maxlength='100' autocomplete='off')
+          
+          br
+          br
+          label(for='title_romaji') !{__('game/new:label-title-romaji')}<br>
+          input#title_romaji(type='text' name='title_romaji' value=form.title_romaji maxlength='100' autocomplete='off')
+
+          br
+          br
+          label(for='title_english') !{__('game/new:label-title-english')}<br>
+          input#title_english(type='text' name='title_english' value=form.title_english maxlength='100' autocomplete='off')
+
+          br
+          br
+          label(for='title_other') !{__('game/new:label-title-other')}<br>
+          input#title_other(type='text' name='title_other' value=form.title_other maxlength='100' autocomplete='off')
+
+      div.column-right
+        h3.header !{__('game/new:header-links')}
+        div.section
+          label(for='homepage') !{__('game/new:label-homepage')}<br>
+          input#homepage(type='text' name='homepage' value=form.homepage maxlength='200' autocomplete='off')
+
+          br
+          br
+          label(for='download') !{__('game/new:label-download')}<br>
+          input#download(type='text' name='download' value=form.download maxlength='200' autocomplete='off')
+
+    div.section
+      center
+        input(type='submit' value=__('game/new:button-submit'))

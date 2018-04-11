@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron')
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Quicksand')
 
 clr-rainbow-1 = rgb(255,192,128)
 clr-rainbow-2 = rgb(255,128,192)
@@ -109,6 +109,22 @@ div.main
   top 100px
   left 262px
 
+div.flex
+  display flex
+  flex-wrap wrap
+
+div.flex > div
+  margin-right 10px
+
+div.column-left
+  order 1
+
+div.column-middle
+  order 2
+
+div.column-right
+  order 3
+
 div.section
   width fit-content
   padding 10px
@@ -158,11 +174,24 @@ h1.logo:hover
   background-size 100% 100%
   cursor pointer
 
+h3.header
+  padding 3px
+  padding-left 10px
+  margin 0
+
+  background linear-gradient(alpha(clr-bg-main, 50%), clr-bg-main)
+  border-top 1px clr-bg-main solid
+
+  font 12pt Quicksand
+
 p, pre
   margin 0
 
 span.label
   font-size 8pt
+
+span.required
+  color clr-rainbow-2
 
 a
   text-decoration none
@@ -173,6 +202,9 @@ a:hover
 
 a.clr-2
   color clr-rainbow-1
+
+a.clr-3
+  color clr-rainbow-3
 
 label
   font-size 7pt
@@ -189,7 +221,7 @@ input:hover
   background alpha(black, 30%)
 
 input[type='text'], input[type='password']
-  width 500px
+  width 450px
   padding 3px
   margin-top 3px
 
@@ -222,6 +254,12 @@ input[type='submit']:hover
 
   div.main
     position static
+
+  div.flex
+    flex-direction column
+
+  div.flex > div
+    margin-right 0
 
   div.section
     width auto

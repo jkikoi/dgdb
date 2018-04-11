@@ -1,11 +1,25 @@
 {
   "db-generic-error": "何かが間違っていた。 問題が解決しない場合は、もう一度やり直すか、サイト管理者に連絡してください",
 
+  "layout:games": "ゲーム",
+  "layout:user-panel": "ユーザパネル",
   "layout:logged-in-as": "ログインしましたのは：",
-  "layout:my-profile": "私のプロフィール",
 
   "home:link_to": "ホーム",
   "home:title": "ホーム",
+
+  "game/new:link_to": "新しいエントリを追加する",
+  "game/new:title": "新しいゲーム",
+  "game/new:header-general": "一般",
+  "game/new:general-desc": "少なくとも1つのタイトルが必要です",
+  "game/new:label-title-jp": "タイトル（日本語）",
+  "game/new:label-title-romaji": "タイトル（Romaji）",
+  "game/new:label-title-english": "タイトル（英語）",
+  "game/new:label-title-other": "別名（カンマ区切り）",
+  "game/new:header-links": "リンク",
+  "game/new:label-homepage": "ゲームのホームページ（公式）",
+  "game/new:label-download": "ダウンロードページ・リンク",
+  "game/new:button-submit": "提出する",
 
   "user/login:link_to": "ログイン",
   "user/login:title": "ログイン",
@@ -33,6 +47,8 @@
   "user/register:error-username-taken": "ユーザー名が取得されました",
   "user/register:error-password-length": "パスワードは、10文字以上100文字以下でなければなりません",
   "user/register:error-password-confirm": "パスワードが一致していません",
+
+  "user/profile:link_to": "私のプロフィール",
 
   "user/logout:link_to": "ログアウト"
 }

@@ -50,7 +50,17 @@ const client_sessions_mw = function(req, res, next) {
   next();
 };
 
+// Middleware that ensures a user is logged in before proceeding
+const require_login = function(req, res, next) {
+  if (req.session && req.session.user) {
+    next();
+  }
+  else {
+    res.redirect('/user/login');
+  }
+};
+
 module.exports = {
   website_name, get_timestamp,
   pg_pool,
-  client_sessions, client_sessions_mw };
+  client_sessions, client_sessions_mw, require_login };
