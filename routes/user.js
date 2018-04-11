@@ -9,6 +9,10 @@ router.get('/login', function(req, res, next) {
     res.redirect('/');
   }
   else {
+    if (!req.session.return_to) {
+      req.session.return_to = req.headers.referer;
+    }
+
     res.render('user/login', {
       title: req.__('user/login:title') + ' - ' + common.website_name,
       form: {} });
@@ -57,7 +61,8 @@ router.post('/login', function(req, res, next) {
             id: res2.rows[0].id,
             name: res2.rows[0].username };
 
-          res.redirect('/');
+          res.redirect(req.session.return_to ? req.session.return_to : '/');
+          delete req.session.return_to;
         }
         else {
           error = 'user/login:error-password-incorrect';
@@ -79,6 +84,10 @@ router.get('/register', function(req, res, next) {
     res.redirect('/');
   }
   else {
+    if (!req.session.return_to) {
+      req.session.return_to = req.headers.referer;
+    }
+
     res.render('user/register', {
       title: req.__('user/register:title') + ' - ' + common.website_name,
       form: {} });

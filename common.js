@@ -56,6 +56,7 @@ const require_login = function(req, res, next) {
     next();
   }
   else {
+    req.session.return_to = req.originalUrl;
     res.redirect('/user/login');
   }
 };
