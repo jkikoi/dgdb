@@ -25,6 +25,7 @@
   "game/new:error-title-missing": "Au moins un titre est requis",
 
   "game/view:title": "Voir le jeu",
+  "game/view:header-details": "Détails",
   "game/view:label-title-jp": "Titre Japonais",
   "game/view:label-title-romaji": "Titre Japonais (Romaji)",
   "game/view:label-title-english": "Titre Anglais",

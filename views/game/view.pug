@@ -11,35 +11,36 @@ block content
 
     div.flex
       div.flex-4.size-med
-        h3.header General
+        h3.header !{__('game/view:header-details')}
         div.section.fill.no-padding
-          div.table
-            if game.title_jp
-              div.table-row
-                div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-jp')}</p>
-                div.table-cell <p>!{game.title_jp}</p>
+          div.padded
+            div.table
+              if game.title_jp
+                div.table-row
+                  div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-jp')}</p>
+                  div.table-cell <p>!{game.title_jp}</p>
 
-            if game.title_romaji
-              div.table-row
-                div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-romaji')}</p>
-                div.table-cell <p>!{game.title_romaji}</p>
+              if game.title_romaji
+                div.table-row
+                  div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-romaji')}</p>
+                  div.table-cell <p>!{game.title_romaji}</p>
 
-            if game.title_english
-              div.table-row
-                div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-english')}</p>
-                div.table-cell <p>!{game.title_english}</p>
+              if game.title_english
+                div.table-row
+                  div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-english')}</p>
+                  div.table-cell <p>!{game.title_english}</p>
 
-            if game.title_other
-              div.table-row
-                div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-other')}</p>
-                div.table-cell <p>!{game.title_other}</p>
+              if game.title_other
+                div.table-row
+                  div.table-cell.flex-4 <p class='label'>!{__('game/view:label-title-other')}</p>
+                  div.table-cell <p>!{game.title_other}</p>
 
-            if game.homepage
-              div.table-row
-                div.table-cell.flex-4 <p class='label'>!{__('game/view:label-homepage')}</p>
-                div.table-cell <p><a href='!{game.homepage}'>!{__('link')}</a></p>
+              if game.homepage
+                div.table-row
+                  div.table-cell.flex-4 <p class='label'>!{__('game/view:label-homepage')}</p>
+                  div.table-cell <p><a href='!{game.homepage}'>!{__('link')}</a></p>
 
-            if game.download
-              div.table-row
-                div.table-cell.flex-4 <p class='label'>!{__('game/view:label-download')}</p>
-                div.table-cell <p><a href='!{game.dowload}'>!{__('link')}</a></p>
+              if game.download
+                div.table-row
+                  div.table-cell.flex-4 <p class='label'>!{__('game/view:label-download')}</p>
+                  div.table-cell <p><a href='!{game.dowload}'>!{__('link')}</a></p>
