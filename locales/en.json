@@ -1,4 +1,5 @@
 {
+  "link": "Link",
   "db-generic-error": "Something went wrong. Please try again, or contact the site admin if the issue persists",
 
   "layout:games": "Games",
@@ -22,6 +23,15 @@
   "game/new:button-submit": "Submit",
   "game/new:error-field-too-long": "A field's character limit was bypassed",
   "game/new:error-title-missing": "At least one title is required",
+
+  "game/view:title": "View game",
+  "game/view:label-title-jp": "Japanese title",
+  "game/view:label-title-romaji": "Japanese title (Romaji)",
+  "game/view:label-title-english": "English title",
+  "game/view:label-title-other": "Also known as",
+  "game/view:label-homepage": "Homepage (official)",
+  "game/view:label-download": "Download",
+  "game/view:error-no-such-id": "No game with that ID exists",
 
   "user/login:link_to": "Log in",
   "user/login:title": "Log in",

@@ -71,6 +71,7 @@ div.main {
   position: absolute;
   top: 100px;
   left: 262px;
+  right: 20px;
 }
 div.flex {
   display: flex;
@@ -79,14 +80,8 @@ div.flex {
 div.flex > div {
   margin-right: 10px;
 }
-div.column-left {
-  order: 1;
-}
-div.column-middle {
-  order: 2;
-}
-div.column-right {
-  order: 3;
+div.flex-4 {
+  flex: 0.4 !important;
 }
 div.section {
   width: fit-content;
@@ -94,6 +89,15 @@ div.section {
   margin-bottom: 10px;
   background: rgba(38,48,58,0.5);
   box-shadow: 5px 5px 0 rgba(0,0,0,0.15);
+}
+div.fill {
+  width: 100%;
+}
+div.size-med {
+  min-width: 460px;
+}
+div.no-padding {
+  padding: 0;
 }
 div.success {
   background: rgba(64,255,64,0.1);
@@ -110,6 +114,24 @@ div.error {
 div.error p,
 div.error pre {
   color: #ffa0a0;
+}
+div.table {
+  width: 100%;
+}
+div.table-row {
+  display: flex;
+  border-bottom: 1px #26303a dotted;
+}
+div.table-row:last-child {
+  border-bottom: none;
+}
+div.table-cell {
+  flex: 1;
+  padding: 5px;
+  padding-left: 10px;
+}
+div.table-cell p.label {
+  color: rgba(255,255,255,0.5);
 }
 h1.logo {
   width: 220px;
@@ -128,6 +150,10 @@ h1.logo {
 h1.logo:hover {
   background-size: 100% 100%;
   cursor: pointer;
+}
+h2 {
+  margin: 0;
+  font: 20pt Quicksand;
 }
 h3.header {
   padding: 3px;
@@ -215,6 +241,9 @@ input[type='submit']:hover {
   }
   div.section {
     width: auto;
+  }
+  div.size-med {
+    min-width: 0;
   }
   input[type='text'],
   input[type='password'] {

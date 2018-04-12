@@ -7,7 +7,7 @@ block content
 
   form(action='/game/new' method='post')
     div.flex
-      div.column-left
+      div
         h3.header !{__('game/new:header-general')}
         div.section
           p <span class='required'>*</span> !{__('game/new:general-desc')}
@@ -31,7 +31,7 @@ block content
           label(for='title_other') !{__('game/new:label-title-other')}<br>
           input#title_other(type='text' name='title_other' value=form.title_other maxlength='100' autocomplete='off')
 
-      div.column-right
+      div
         h3.header !{__('game/new:header-links')}
         div.section
           label(for='homepage') !{__('game/new:label-homepage')}<br>

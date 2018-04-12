@@ -72,4 +72,35 @@ router.post('/new', common.require_login, function(req, res, next) {
   }
 });
 
+router.get('/:id', function(req, res, next) {
+  const query = 'SELECT * FROM games WHERE id = $1;';
+  const vars = [ req.params.id ];
+
+  common.pg_pool.query(query, vars, (err, res2) => {
+    if (err) {
+      console.error(err);
+
+      res.render('game/view', {
+        title: req.__('game/view:title') + ' - ' + common.website_name,
+        error: req.__('db-generic-error') });
+    }
+    else if (res2.rowCount == 0) {
+      res.render('game/view', {
+        title: req.__('game/view:title') + ' - ' + common.website_name,
+        error: req.__('game/view:error-no-such-id') });
+    }
+    else {
+      const title_main =
+        res2.rows[0].title_romaji ? res2.rows[0].title_romaji :
+        res2.rows[0].title_english ? res2.rows[0].title_english :
+        res2.rows[0].title_jp;
+
+      res.render('game/view', {
+        title: title_main + ' - ' + common.website_name,
+        title_main: title_main,
+        game: res2.rows[0] });
+    }
+  });
+});
+
 module.exports = router;

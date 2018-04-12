@@ -7,7 +7,7 @@ block content
 
   form(action='/user/register' method='post')
     div.flex
-      div.column-left
+      div
         div.section
           label(for='username') !{__('user/register:label-username')}<br>
           input#username(type='text' name='username' value=form.username maxlength='20' autocomplete='off')
@@ -22,7 +22,7 @@ block content
           label(for='password_confirm') !{__('user/register:label-password_confirm')}<br>
           input#password_confirm(type='password' name='password_confirm' value=form.password_confirm maxlength='100' autocomplete='off')
 
-      div.column-right
+      div
         div.section
           p !{__('user/register:description')}
 

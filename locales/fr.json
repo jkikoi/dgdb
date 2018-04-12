@@ -1,4 +1,5 @@
 {
+  "link": "Lien",
   "db-generic-error": "Quelque chose s'est mal passé. Veuillez réessayer, ou contactez l'administrateur du site si le problème persiste",
 
   "layout:games": "Jeux",
@@ -22,6 +23,15 @@
   "game/new:button-submit": "Soumettre",
   "game/new:error-field-too-long": "La limite de caractères d'un champ a été ignorée",
   "game/new:error-title-missing": "Au moins un titre est requis",
+
+  "game/view:title": "Voir le jeu",
+  "game/view:label-title-jp": "Titre Japonais",
+  "game/view:label-title-romaji": "Titre Japonais (Romaji)",
+  "game/view:label-title-english": "Titre Anglais",
+  "game/view:label-title-other": "Aussi connu sous le nom",
+  "game/view:label-homepage": "Homepage (officiel)",
+  "game/view:label-download": "Télécharger",
+  "game/view:error-no-such-id": "Aucun jeu avec cet ID n'existe",
 
   "user/login:link_to": "Se connecter",
   "user/login:title": "Se connecter",

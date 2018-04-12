@@ -1,4 +1,5 @@
 {
+  "link": "リンク",
   "db-generic-error": "何かが間違っていた。 問題が解決しない場合は、もう一度やり直すか、サイト管理者に連絡してください",
 
   "layout:games": "ゲーム",
@@ -22,6 +23,15 @@
   "game/new:button-submit": "提出する",
   "game/new:error-field-too-long": "フィールドの文字制限がバイパスされました",
   "game/new:error-title-missing": "少なくとも一つのタイトルが必要です",
+
+  "game/view:title": "ゲームを見る",
+  "game/view:label-title-jp": "日本のタイトル",
+  "game/view:label-title-romaji": "日本のタイトル（Romaji）",
+  "game/view:label-title-english": "英語のタイトル",
+  "game/view:label-title-other": "としても知られている",
+  "game/view:label-homepage": "ホームページ（公式）",
+  "game/view:label-download": "ダウンロード",
+  "game/view:error-no-such-id": "そのIDのゲームは存在しません",
 
   "user/login:link_to": "ログイン",
   "user/login:title": "ログイン",
