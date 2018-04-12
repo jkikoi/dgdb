@@ -20,6 +20,8 @@
   "game/new:label-homepage": "Game's homepage (official)",
   "game/new:label-download": "Download page/link",
   "game/new:button-submit": "Submit",
+  "game/new:error-field-too-long": "A field's character limit was bypassed",
+  "game/new:error-title-missing": "At least one title is required",
 
   "user/login:link_to": "Log in",
   "user/login:title": "Log in",

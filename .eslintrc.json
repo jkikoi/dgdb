@@ -8,6 +8,7 @@
     "camelcase": "off",
     "object-curly-spacing": "off",
     "brace-style": "off",
-    "array-bracket-spacing": "off"
+    "array-bracket-spacing": "off",
+    "no-multi-spaces": "off"
   }
 }

@@ -1,6 +1,10 @@
 extends ../layout
 
 block content
+  if error
+    div.section.error
+      p= error
+
   form(action='/game/new' method='post')
     div.flex
       div.column-left

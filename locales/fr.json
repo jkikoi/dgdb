@@ -20,6 +20,8 @@
   "game/new:label-homepage": "La page d'accueil du jeu (officiel)",
   "game/new:label-download": "Télécharger la page/le lien",
   "game/new:button-submit": "Soumettre",
+  "game/new:error-field-too-long": "La limite de caractères d'un champ a été ignorée",
+  "game/new:error-title-missing": "Au moins un titre est requis",
 
   "user/login:link_to": "Se connecter",
   "user/login:title": "Se connecter",
